@@ -1,0 +1,177 @@
+<!DOCTYPE html> <!-- The new doctype -->
+<html>
+    <head>
+    
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        
+        <title>Maxwell Herrington</title>
+        <link rel="icon" type="image/ico" href="images/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="styles/normalize.css">
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script> 
+$(document).ready(function(){
+    $(".ShowMore1").click(function(){
+        $(".ArticleBelow1").slideToggle("800");
+    });
+});
+
+$(document).ready(function(){
+    $(".ShowMore3").click(function(){
+        $(".ArticleBelow3").slideToggle("800");
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (1000) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1000, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+<script>
+//h1 and h3 fade in
+$(document).ready(function () {
+    $('.hidden').fadeIn(3000).removeClass('hidden');
+});
+</script>
+    </head>
+    
+    <body>
+    	
+    	<section id="page"> <!-- Defining the #page section with the section tag -->
+    
+            <header> <!-- Defining the header section of the page with the appropriate tag -->
+            
+                <hgroup>
+					<h1 class = "hidden">Maxwell Herrington</h1>
+					<h3 class = "hidden">Web Developer</h3>
+				</hgroup>
+                                
+                <nav class="clear"> <!-- The nav link semantically marks your main site navigation -->
+                    <ul>
+                        <li><a href="#article1">About</a></li>
+                        <li><a href="#article2">Projects</a></li>
+                        <li><a href="#article3">Contact</a></li>
+                    </ul>
+                </nav>
+            
+            </header>
+            
+            <section id="articles"> <!-- A new section with the articles -->
+
+				<!-- Article 1 start -->
+
+                <div class="line"></div>  <!-- Dividing line -->
+                
+                <article id="article1"> <!-- The new article tag. The id is supplied so it can be scrolled into view. -->
+                    <h2>About<a class="go_up" href="#page" class="up">&uparrow;</a></h2>
+
+                    <div class="line"></div>
+                    
+                    <div class="articleBody clear">
+                    
+                    	<figure class = "ArticleBelow1"> <!-- The figure tag marks data (usually an image) that is part of the article -->
+	                    	<img src="images/computer.jpg" >
+                        </figure>
+                        
+                        <p>Max is originally from Rothesay, New Brunswick, where he lived until the age of 14, when he moved to Halifax, Nova Scotia. 
+						After completeing high school, Max attended Mount Saint Vincent University in Halifax, where he received a degree in Business 
+						Administration, with a major in management.</p>
+						<p>After several years in the workforce, and with his 30th birthday fast approaching, Max decided to augment his education. 
+						He chose the Computer Application Development program offered at Conestoga College in Kitchener, Ontario.</p>
+						<p class = "ArticleBelow1">Currently past the mid-point of his first semester of the two semester program. Max has already gained
+						a wealth of knowledge and experience in the following areas:
+						
+						</p>
+						<button class = "ShowMore1"></button>
+                    </div>
+					<div class="line"></div>  <!-- Dividing line -->
+					
+                </article>
+                
+				<!-- Article 1 end -->
+
+
+				<!-- Article 2 start -->
+
+                <div class="line"></div>
+                
+                <article id="article2">
+                    <h2>Projects<a class="go_up" href="#page" class="up">&uparrow;</a></h2>
+                    
+                    <div class="line"></div>
+                    
+                    <div class="articleBody clear">
+                    	<!--<figure>
+	                    	<a href="pages/ghia.html"><img src="images/ghia.jpg"/></a>
+                        </figure>-->
+                        
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus quam quis nibh fringilla sit amet consectetur lectus malesuada. Sed nec libero erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus quam quis nibh fringilla sit amet consectetur lectus malesuada. Sed nec libero erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi nisi, rhoncus ut vestibulum ac, sollicitudin quis lorem. Duis felis dui, vulputate nec adipiscing nec, interdum vel tortor. Sed gravida, erat nec rutrum tincidunt, metus mauris imperdiet nunc, et elementum tortor nunc at eros. Donec malesuada congue molestie. Suspendisse potenti. Vestibulum cursus congue sem et feugiat. Morbi quis elit odio. </p>
+						
+                    </div>
+					<div class="line"></div>  <!-- Dividing line -->
+                </article>
+                
+				<!-- Article 2 end -->
+
+				<!-- Article 3 start -->
+
+                <div class="line"></div>
+                
+                <article id="article3">
+                    <h2>Contact<a class="go_up" href="#page" class="up">&uparrow;</a></h2>
+                    
+                    <div class="line"></div>
+                    
+                    <div class="articleBody clear">
+                    	<!--<figure>
+	                    	<a href="pages/bus.html"><img src="images/bus.jpg" width="500" height="300" /></a>
+                        </figure>-->
+						<aside class = "ArticleBelow3">Hello There</aside>
+                        
+                        <p>If you are looking to get in touch with Max please feel free to reach out using the email or phone number below.
+						He looks forward to hearing from you.</p>
+						<p class = "ArticleBelow3">Email Goes Here!!!!!!!</p>
+						<p class = "ArticleBelow3">Telephone number goes here!!!!!!!</p>
+						<button class = "ShowMore3"></button>
+                    </div>
+					<div class="line"></div>  <!-- Dividing line -->
+                </article>
+                
+				<!-- Article 3 end -->		
+            </section>
+        <footer> <!-- Marking the footer section -->
+
+           <div class="line"></div>
+           
+           <p>Copyright 2017 - Maxwell Herrington</p>
+         
+        </footer>
+            
+		</section> <!-- Closing the #page section -->
+        
+    </body>
+</html>

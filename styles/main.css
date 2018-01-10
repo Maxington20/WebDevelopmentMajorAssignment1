@@ -1,0 +1,446 @@
+*{
+	/* Universal reset: */
+	margin:0;
+	padding:0;
+}
+html{
+	height:100%:
+}
+
+header,footer,
+article,section,
+hgroup,nav,
+figure{
+	/* Giving a display value to the HTML5 rendered elements: */
+	display:block;
+}
+
+body{
+	/* Setting the default text color, size, page background and a font stack: */
+	height:100%;
+	font-size:0.825em;
+	color:white;
+	background-color:#355664;
+	font-family:Arial, Helvetica, sans-serif;
+	background-image: url(../images/body_background.jpeg);
+}
+h1.hidden{
+	display:none;
+}
+h3.hidden{
+	display:none;
+}
+	
+
+/* Hyperlink Styles: */
+
+a, a:visited {
+	color:black;;
+	text-decoration:none;
+	outline:none;
+}
+
+a:hover{
+	font-weight: bolder;
+}
+
+a img{
+	border:none;
+	overflow:hidden;
+	max-width:500px;
+	min-width:200;
+	max-height:300px;
+	min-height:120;
+}
+
+figure img{
+	width:100%;
+	max-width:500px;
+	min-width:200px;
+}
+
+/* Headings: */
+
+h1,h2,h3{
+	font-family:"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+	text-shadow:0 1px 1px black;
+}
+
+h1{
+	/* The logo text */
+	font-size:3.5em;
+	color:white;
+	padding:0.5em 0 0;
+	text-transform:uppercase;
+	text-shadow:2px 2px 1px black;
+}
+
+h3{
+	/* The slogan text */
+	/*font-family:forte,"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;*/
+	color:white;
+	font-size:2em;
+	font-weight:normal;
+	margin:0 0 1em;
+}
+
+h2{
+	font-size:2.2em;
+	color:navy;
+	font-weight:normal;
+	letter-spacing:0.01em;
+	text-transform:uppercase;
+	text-shadow:1px 1px 1px black;
+}
+.go_up {
+	color:white;
+	float: right; 
+	padding:.25em .5em .25em .5em;
+	border-radius:10px;
+}
+.go_up:hover{
+	background-color:white;
+}
+
+p{
+	line-height:1.5em;
+	padding-bottom:1em;
+	font-size:1.25em;
+}
+.pbold{
+	font-size:1.2em;
+	font-weight:bold;
+	letter-spacing:0.01em;
+	text-transform:uppercase;
+}
+
+.line{
+	/* The dividing line: */
+	height:1px;
+	background-color:white;
+	border-bottom:1px ridge black;
+	margin:1em 0;
+	overflow:hidden;
+}
+
+article .line{
+	/* The dividing line inside of the article is darker: */
+	background-color:#15242a;
+	border-bottom-color:#204656;
+	margin:1.3em 0;
+}
+
+footer .line{
+	margin:2em 0;
+}
+
+nav{
+	background:url(../images/sweetbackground.png);
+	padding:0 1em;
+	position:relative;
+	font-size:1em;
+	/*position:absolute;*/
+	/*top:8em;*/
+	text-align:center;
+	width:30%;
+	min-width:310px;
+	border:1px solid black;
+	-moz-box-shadow:0 1px 1px #333333;
+	-webkit-box-shadow:0 1px 1px #333333;
+	box-shadow:0 1px 1px #333333;
+	text-shadow:2px 2px 1px white;
+}
+
+/* The clearfix hack to clear the floats: */
+
+.clear:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/* The navigation styling: */
+
+nav ul li{
+	display:inline;
+	text-align:center;
+}
+
+nav ul li a,
+nav ul li a:visited{
+	color:black;
+	display:block;
+	float:left;
+	font-size:1.25em;
+	font-weight:bold;
+	/*margin:5px 2px;
+	padding:7px 10px 4px;*/
+	margin:0.25em 0.15em;
+	padding:0.45em 0.66em 0.25em;
+	text-shadow:0 1px 1px white;
+	text-transform:uppercase;
+	text-align:center;
+}
+
+nav ul li a:hover{
+	text-decoration:none;
+	background-color:white;
+}
+
+nav, article, nav ul li a,figure,aside{
+	/* Applying CSS3 rounded corners: */
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+
+/* Article styles: */
+
+#page{
+	width:80%;
+	max-width:1000px;
+	min-width:350px;
+	margin:0 auto;
+	position:relative;
+}
+
+article{
+	color:black;
+	margin:3em 0;
+	padding:1.5em;
+	min-width:300px;
+	background-image:URL(../images/sweetbackground.png);
+	text-shadow:0 0 0 0;
+	border:2px solid black;
+}
+
+aside{
+	width:40%;
+	height:25%;
+	min-width:200px;
+	float:right;
+	background-color:white;
+	border: 2px solid black;
+	padding:1em;
+	margin:0 1em;
+	text-align:center;
+}
+.ArticleBelow1{
+	display:none;
+	color:black;
+}
+
+.ArticleBelow3{
+	display:none;
+	color:black;
+}
+
+button.ShowMore1 {
+    background-color: navy;
+    color: white;
+	font-size:1.25em;
+    cursor: pointer;
+    padding: 7px;
+    width: 10%;
+	min-width:70px;
+    border: 1px ridge black;
+    outline: none;
+    transition: 0.4s;
+    border-radius: 10px;
+    margin-right: 45%;
+    margin-left: 45%;
+	text-align:center;
+	margin-bottom:0;
+	margin-top:1.5em;
+	box-shadow:2px 2px 2px black;
+    
+}
+
+button.ShowMore1.active, button.ShowMore1:hover {
+    background-color: deepskyblue;
+    background-image: linear-gradient(rgb(86,204,242),rgb(47,128,237));
+    font-size: 150%;
+}
+button.ShowMore1.active, button.ShowMore1:focus {
+    background-color: deepskyblue;
+    background-image: linear-gradient(rgb(86,204,242),rgb(47,128,237));
+    font-size: 150%;
+}
+
+button.ShowMore1:after {
+    content: 'Show \002B';
+    color: white;
+    font-weight: bold;
+    margin-left: 5px;
+	cursor:hand;
+}
+
+button.ShowMore1.active:after {
+    content: "\2212";
+}
+
+button.ShowMore3 {
+    background-color: navy;
+    color: white;
+	font-size:1.25em;
+    cursor: pointer;
+    padding: 7px;
+    width: 10%;
+	min-width:70px;
+	text-align:center;
+    border: 1px ridge black;
+    outline: none;
+    transition: 0.4s;
+    border-radius: 10px;
+    margin-right: 45%;
+    margin-left: 45%;
+	text-align:center;
+	margin-bottom:0;
+	margin-top:1.5em;
+	box-shadow:2px 2px 2px black;
+    
+}
+
+button.ShowMore3.active, button.ShowMore3:hover {
+    background-color: deepskyblue;
+    background-image: linear-gradient(rgb(86,204,242),rgb(47,128,237));
+    font-size: 150%;
+}
+button.ShowMore3.active, button.ShowMore3:focus {
+    background-color: deepskyblue;
+    background-image: linear-gradient(rgb(86,204,242),rgb(47,128,237));
+    font-size: 150%;
+}
+
+button.ShowMore3:after {
+    content: 'Show \002B';
+    color: white;
+    font-weight: bold;
+    margin-left: 5px;
+	cursor:hand;
+}
+
+button.ShowMore3.active:after {
+    content: "\2212";
+}
+
+figure{
+	border:3px solid black;
+	float:right;
+	max-height:300px;
+	min-height:120px;
+	margin-left:1em;
+	margin-right:1em;
+	max-width:500px;
+	min-width:200px;
+	overflow:hidden;
+}
+
+figure:hover{
+	-moz-box-shadow:0 0 2px #4D7788;
+	-webkit-box-shadow:0 0 2px #4D7788;
+	box-shadow:0 0 2px #4D7788;
+}
+
+/* Footer styling: */
+
+footer{
+	margin-bottom:30px;
+	text-align:right;
+	font-size:0.825em;
+}
+
+
+footer p{
+	margin-bottom:-2.5em;
+	position:relative;
+}
+
+footer a,footer a:visited{
+	color:#cccccc;
+	background-color:#213e4a;
+	display:block;
+	padding:2px 4px;
+	z-index:100;
+	position:relative;
+}
+
+footer a:hover{
+	text-decoration:none;
+	background-color:#142830;
+}
+
+footer a.by{
+	float:left;
+
+}
+
+footer a.up{
+	float:right;
+}
+
+@media only screen and (max-width:959){
+	#page{
+		width:90%;
+	}
+	nav.clear{
+		display:none;
+	}
+	button.ShowMore1,button.ShowMore3{
+		font-size:0.75em;
+	}
+}
+
+@media only screen and (max-width:767px){
+	#page{
+		width:90%;
+	}
+	h1,h3{
+		text-align:center;
+	}
+	nav.clear{
+		display:none;
+	}
+	button.ShowMore1,button.ShowMore3{
+		font-size:0.75em;
+	}
+	button.ShowMore1:hover,button.ShowMore3:hover{
+		font-size:0.75em;
+	}
+	button.ShowMore1:focus, button.ShowMore3:focus{
+		font-size:0.75em;
+	}
+}
+@media only screen and (max-width:479px){
+	#page{
+		width:100%;
+	}
+	h1,h3{
+		text-align:center;
+	}
+	h1{
+		font-size:1.5em;
+	}
+	h3{
+		font-size:1.35em;
+	}
+	h2{
+		font-size:1.35em;
+	}
+	button.ShowMore1,button.ShowMore3{
+		font-size:0.75em;
+	}
+	button.ShowMore1:hover,button.ShowMore3:hover{
+		font-size:0.75em;
+	}
+	button.ShowMore1:focus, button.ShowMore3:focus{
+		font-size:0.75em;
+	}
+	
+}
+
+	
+	
+	
